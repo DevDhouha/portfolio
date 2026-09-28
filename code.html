@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-high":"#222a3d","inverse-on-surface":"#283044","primary-container":"#10b981","error":"#ffb4ab","secondary-container":"#25a475","on-tertiary-fixed":"#002114","on-tertiary-fixed-variant":"#005137","on-tertiary-container":"#00422c","on-secondary":"#003825","surface-container-low":"#131b2e","primary-fixed":"#6ffbbe","on-secondary-container":"#00311f","surface-container-highest":"#2d3449","secondary-fixed-dim":"#68dba9","tertiary-fixed-dim":"#45dfa4","background":"#0b1326","surface-container-lowest":"#060e20","secondary-fixed":"#85f8c4","outline-variant":"#3c4a42","error-container":"#93000a","primary-fixed-dim":"#4edea3","primary":"#4edea3","on-primary-container":"#00422b","on-error":"#690005","on-background":"#dae2fd","surface-container":"#171f33","surface-dim":"#0b1326","inverse-surface":"#dae2fd","tertiary":"#45dfa4","surface":"#0b1326","on-tertiary":"#003825","tertiary-fixed":"#68fcbf","inverse-primary":"#006c49","secondary":"#68dba9","surface-tint":"#4edea3","on-error-container":"#ffdad6","on-surface-variant":"#bbcabf","surface-variant":"#2d3449","surface-bright":"#31394d","on-secondary-fixed-variant":"#005137","tertiary-container":"#00b982","on-secondary-fixed":"#002114","on-surface":"#dae2fd","on-primary-fixed-variant":"#005236","on-primary":"#003824","on-primary-fixed":"#002113","outline":"#86948a"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-md":"1.25rem","space-sm":"0.75rem","space-xs":"0.375rem","space-lg":"2rem","space-xl":"3.5rem","gutter-mobile":"1rem","margin":"2rem","gutter":"1.5rem","margin-mobile":"1.25rem"},fontFamily:{"headline-lg-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"label-tech":["JetBrains Mono"],"caption":["Inter"],"headline-lg":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-code-snippet":["JetBrains Mono"],"title-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-md":["Inter"]},fontSize:{"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"400"}],"label-tech":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"caption":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"30px","letterSpacing":"0em","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-code-snippet":["13px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"title-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-20 max-w-[1280px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><a class="flex items-center gap-space-xs group" href="#"><img alt="Dhouha Bahloul Logo" class="h-8 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1WoAx9v0cCjNcaIBPTHy0XCrdkBidM2esoOF_0ZcAD7zQ-lEBTDsQBC2BzGcCR5q5u91Uuqic7CkbI5IJB2V_9ruKa6sbOrsX1KM42ocNg_fS-bR0ZdRktAk3CSNIms5361jTuCHLpz_WtvKPL5cECnfyux5nbH6zVywd9kqdqXSczsugQ1JlfeHtUgpKemPtHx6kGOgrDTwBI8gtESvIek7iF-h6CEgAMDK2Oc1ZuyAsW-Z2GF30nflMA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight group-hover:text-primary transition-colors">Dhouha Bahloul</span><span class="font-label-tech text-caption text-on-surface-variant">Laravel &amp; PHP Full-Stack</span></div></a><div class="hidden xl:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span><span class="font-label-tech text-caption text-primary">Open to Opportunities</span></div></div><nav class="hidden lg:flex items-center gap-space-md" data-active-classes="text-primary font-bold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="portfolio#about" href="#about">About</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="portfolio#skills" href="#skills">Skills</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="portfolio#experience" href="#experience">Experience</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="portfolio#projects" href="#projects">Projects</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="portfolio#education" href="#education">Education</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="portfolio#contact" href="#contact">Contact</a></nav><div class="flex items-center gap-space-xs"><div class="flex items-center gap-1"><a aria-label="GitHub Profile" class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">code</span></a><a aria-label="LinkedIn Profile" class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" href="https://linkedin.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">share</span></a></div><a class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary text-on-primary font-body-sm text-body-sm hover:bg-primary-fixed transition-colors shadow-[0_0_16px_rgba(78,222,163,0.25)]" href="#contact"><span class="material-symbols-outlined text-[18px]">download</span><span>Download CV</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ml-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-MTcN6DqvzBxezowrv4KGt0k_38c3e6TDqqIICfjR5wGnSWnOWUlz1EYHA7oi3OUuJyXPAAsyCUYT7Qy8ZWwjP0W7aD5m_8kfeEry9yIme1DGXd2SIlU9Ba6iXLqXtrEY7k4s5MT9Nf6KauSFEnW6t0kv3ABX4igokcfsujDQPpmE5FdBvjEvov77U2bQ1GRh7yHGbkv-mXt3odYSy0JNFy4PwEAHxjf71sgThBfppYjTRFoyHSJe"/></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Ambient Glow Effects (Contained) -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute top-10 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-80 right-10 w-80 h-80 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- 1. HERO SECTION -->
+<section class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin pt-space-md md:pt-space-lg pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Left Column (Bio & Intro) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Pill Badge -->
+<div class="inline-flex items-center gap-2 self-start px-3.5 py-1.5 rounded-full bg-surface-container-high shadow-sm">
+<span class="text-base">🚀</span>
+<span class="font-label-tech text-label-tech text-primary tracking-wide">Full-Stack Web Developer • 3+ Years Experience</span>
+</div>
+<!-- Main Headline -->
+<div class="flex flex-col gap-1">
+<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-on-surface tracking-tight">
+              Hi, I'm <span class="text-on-surface">Dhouha Bahloul</span>
+</h1>
+<p class="font-headline-lg text-headline-lg-mobile md:text-headline-lg bg-gradient-to-r from-primary via-primary-fixed to-secondary bg-clip-text text-transparent">
+              Laravel &amp; PHP Full-Stack Developer
+            </p>
+</div>
+<!-- Profile Pitch -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Full-Stack Web Developer with 3+ years of professional experience building and maintaining web applications, with a strong focus on <strong class="text-on-surface font-semibold">Laravel, PHP and MySQL</strong>. Experienced across the web development lifecycle, including functional requirement analysis, application development, REST API integration, unit testing, debugging and maintenance. Strong experience in business and e-commerce applications, with responsive frontend development.
+          </p>
+<!-- Contact Meta Badges -->
+<div class="flex flex-wrap items-center gap-2.5 pt-1">
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-label-tech text-caption shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+<span>Sfax, Tunisia</span>
+</div>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-primary transition-colors font-label-tech text-caption shadow-sm" href="mailto:bahlouldhouha86@gmail.com">
+<span class="material-symbols-outlined text-[16px] text-primary">mail</span>
+<span>bahlouldhouha86@gmail.com</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-primary transition-colors font-label-tech text-caption shadow-sm" href="tel:+21650585315">
+<span class="material-symbols-outlined text-[16px] text-primary">phone</span>
+<span>+216 50 585 315</span>
+</a>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-3 pt-2">
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-on-primary font-body-md text-body-md font-semibold hover:bg-primary-fixed transition-all shadow-[0_0_24px_rgba(78,222,163,0.3)]" href="#projects">
+<span>Explore Work</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+<a class="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-surface-container-high text-on-surface hover:text-primary hover:bg-surface-container-highest transition-colors font-body-md text-body-md font-medium shadow-sm" href="#contact">
+<span>Get In Touch</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</a>
+<a class="inline-flex items-center gap-2 px-4 py-3 rounded-lg bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors font-label-tech text-body-sm shadow-sm" href="https://github.com/DevDhouha" rel="noopener noreferrer" target="_blank" title="GitHub Profile">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>DevDhouha</span>
+</a>
+<a class="inline-flex items-center gap-2 px-4 py-3 rounded-lg bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors font-label-tech text-body-sm shadow-sm" href="https://linkedin.com/in/dhouha-bahloul-0a202b244/" rel="noopener noreferrer" target="_blank" title="LinkedIn Profile">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>LinkedIn</span>
+</a>
+</div>
+<!-- Metrics Ribbon -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-4">
+<div class="p-3.5 rounded-xl bg-surface-container-low shadow-sm flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-bold">3+</span>
+<span class="font-caption text-caption text-on-surface-variant">Years Professional Experience</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low shadow-sm flex flex-col">
+<span class="font-headline-md text-headline-md text-secondary font-bold">2+</span>
+<span class="font-caption text-caption text-on-surface-variant">Enterprise &amp; E-com Platforms</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low shadow-sm flex flex-col">
+<span class="font-headline-md text-headline-md text-primary font-bold">100%</span>
+<span class="font-caption text-caption text-on-surface-variant">PHPUnit &amp; ISTQB Driven</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low shadow-sm flex flex-col">
+<span class="font-headline-md text-headline-md text-secondary font-bold">M.Sc.</span>
+<span class="font-caption text-caption text-on-surface-variant">Software Engineering</span>
+</div>
+</div>
+</div>
+<!-- Right Column (Profile Display + Dynamic Laravel Terminal) -->
+<div class="lg:col-span-5 flex flex-col gap-space-sm">
+<!-- Card with Developer Showcase -->
+<div class="relative rounded-2xl bg-surface-container-low p-space-sm shadow-xl flex flex-col gap-space-sm overflow-hidden">
+<div class="relative w-full h-72 rounded-xl overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="Professional female software engineer sitting with laptop in a modern dimly lit dark studio with subtle emerald neon highlights, clean cinematic photography, dark slate backdrop, warm professional ambient light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2P23Gps1EbRd6eeJWlDWyYQhcpfRem1Cp7KHOmTf4PCutn1zS3j6k29KBtu17tgJEutCilI1J7RJ411P8GrswdSr6g0hzhPDuWw5aeyyENq3RvftMp8LAb14YxzYIWS1OWz9m5oGlKPXKSQENcjX5C8AWgOecHcf9RLgOAKp4EmN5rtXmBeTFtijifqnJnQ7wXN_fU26NOrn9LK7DiHV1zxLkoGVwezv_Ne1VBsnhzjNcQyreUzll"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<!-- Floating Tech Badges -->
+<div class="absolute bottom-3 left-3 right-3 flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-highest/90 backdrop-blur-md text-primary font-label-tech text-caption font-semibold shadow-sm">Laravel 11</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-highest/90 backdrop-blur-md text-primary font-label-tech text-caption shadow-sm">PHP 8.2+</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-highest/90 backdrop-blur-md text-on-surface font-label-tech text-caption shadow-sm">MySQL</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-highest/90 backdrop-blur-md text-secondary font-label-tech text-caption shadow-sm">React</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-highest/90 backdrop-blur-md text-on-surface font-label-tech text-caption shadow-sm">Docker</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-highest/90 backdrop-blur-md text-primary font-label-tech text-caption shadow-sm">REST APIs</span>
+</div>
+</div>
+<!-- Laravel Controller Snippet Box -->
+<div class="w-full rounded-xl bg-surface-container-lowest p-space-sm shadow-inner flex flex-col gap-2 font-label-code-snippet text-label-code-snippet">
+<div class="flex items-center justify-between pb-2 bg-surface-container-low/50 px-2.5 py-1 rounded-lg">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="ml-2 font-label-tech text-caption text-on-surface-variant">OrderController.php</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-label-tech text-caption text-primary">Artisan:Ready</span>
+</div>
+</div>
+<pre class="overflow-x-auto text-[12px] leading-5 text-on-surface-variant font-label-tech px-2"><code><span class="text-secondary">namespace</span> App\Http\Controllers\Api;
+
+<span class="text-secondary">class</span> <span class="text-primary font-semibold">OrderController</span> <span class="text-secondary">extends</span> Controller {
+  <span class="text-secondary">public function</span> <span class="text-primary font-medium">checkout</span>(StoreOrderRequest <span class="text-on-surface">$request</span>) {
+    <span class="text-outline-variant">// Transaction &amp; Inventory Validation</span>
+    <span class="text-on-surface">$order</span> = DB::transaction(<span class="text-secondary">function</span> () <span class="text-secondary">use</span> (<span class="text-on-surface">$request</span>) {
+      <span class="text-secondary">return</span> Order::createWithItems(<span class="text-on-surface">$request</span>-&gt;validated());
+    });
+    
+    <span class="text-secondary">return</span> OrderResource::make(<span class="text-on-surface">$order</span>)
+      -&gt;additional([<span class="text-primary">'status'</span> =&gt; <span class="text-primary">'success'</span>]);
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- 2. CORE SKILLS MATRIX (Systematic Category Bento) -->
+<section class="w-full bg-surface-container-lowest py-space-xl" id="skills">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-xs">
+<div>
+<span class="font-label-tech text-label-tech text-primary uppercase tracking-widest">Capabilities &amp; Specialization</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Core Skills Matrix</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Structured across full-stack layers with enterprise emphasis on rigorous test-driven Laravel systems, relational database fidelity, and clean modern UI.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Category: Backend -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">dns</span>
+</div>
+<span class="font-label-tech text-caption text-primary bg-primary/10 px-2 py-0.5 rounded">Core Specialization</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Backend &amp; APIs</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Architecting enterprise logic, MVC controllers, Eloquent ORM abstractions, and scalable micro-endpoints.</p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2.5 py-1 rounded bg-primary text-on-primary font-label-tech text-caption font-semibold">Laravel</span>
+<span class="px-2.5 py-1 rounded bg-primary text-on-primary font-label-tech text-caption font-semibold">PHP</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-primary font-label-tech text-caption">REST APIs</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">Node.js</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">Express.js</span>
+</div>
+</div>
+<!-- Category: Frontend -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">devices</span>
+</div>
+<span class="font-label-tech text-caption text-secondary bg-secondary/10 px-2 py-0.5 rounded">Client Layer</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Frontend Development</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Crafting responsive interfaces, asynchronous data hydration with AJAX, and reactive component hierarchies.</p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-primary font-label-tech text-caption">JavaScript</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-primary font-label-tech text-caption">jQuery</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-primary font-label-tech text-caption">AJAX</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-secondary font-label-tech text-caption font-medium">React</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">HTML5</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">CSS3</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">Bootstrap</span>
+</div>
+</div>
+<!-- Category: Databases -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">database</span>
+</div>
+<span class="font-label-tech text-caption text-primary bg-primary/10 px-2 py-0.5 rounded">Data Persistence</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Databases &amp; Storage</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Schema normalization, indexing strategies, migrations, and transactional integrity for high-volume stores.</p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2.5 py-1 rounded bg-primary text-on-primary font-label-tech text-caption font-semibold">MySQL</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-primary font-label-tech text-caption">PostgreSQL</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">MongoDB</span>
+</div>
+</div>
+<!-- Category: Testing & Quality -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+<span class="font-label-tech text-caption text-primary bg-primary/10 px-2 py-0.5 rounded">High Reliability</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Testing &amp; Quality</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rigorous automated verification under PHPUnit, REST endpoint validation, and ISTQB-aligned defect logging.</p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2.5 py-1 rounded bg-primary text-on-primary font-label-tech text-caption font-semibold">PHPUnit</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-primary font-label-tech text-caption">Postman</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-secondary font-label-tech text-caption">ISTQB Foundation Level</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">Manual Testing</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">Debugging</span>
+</div>
+</div>
+<!-- Category: DevOps & Tools -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">terminal</span>
+</div>
+<span class="font-label-tech text-caption text-secondary bg-secondary/10 px-2 py-0.5 rounded">Operations</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">DevOps &amp; Tools</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Containerized development environments, Git version pipelines, Linux administration, and deployment setups.</p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-primary font-label-tech text-caption font-medium">Docker</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">Git / GitHub</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">Linux</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-secondary font-label-tech text-caption">CI/CD</span>
+</div>
+</div>
+<!-- Category: Additional / Foundations -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[22px]">account_tree</span>
+</div>
+<span class="font-label-tech text-caption text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">Engineering Base</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Foundations &amp; OOP</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Academic and applied mastery in enterprise object-oriented languages, enterprise frameworks, and desktop apps.</p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">C# / .NET</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">Spring Boot</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">JEE</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">Angular</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. PROFESSIONAL EXPERIENCE (Timeline) -->
+<section class="w-full py-space-xl" id="experience">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin flex flex-col gap-space-lg">
+<div class="flex flex-col gap-1">
+<span class="font-label-tech text-label-tech text-primary uppercase tracking-widest">Career Milestones</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Professional Experience</h2>
+</div>
+<div class="relative flex flex-col gap-space-lg">
+<!-- Continuous Vertical Rail -->
+<div class="absolute top-4 bottom-4 left-4 md:left-8 w-0.5 bg-surface-container-highest"></div>
+<!-- Position 1: IBS -->
+<div class="relative flex items-start gap-4 md:gap-8 group">
+<!-- Timeline Indicator Node -->
+<div class="relative z-10 flex-shrink-0 w-8 md:w-16 flex items-center justify-center">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(78,222,163,0.5)]">
+<span class="material-symbols-outlined text-[16px] text-on-primary">code</span>
+</div>
+</div>
+<!-- Position Content Card -->
+<div class="flex-1 rounded-2xl bg-surface-container-low p-space-md md:p-space-lg shadow-md hover:bg-surface-container transition-colors">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 pb-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Web Full-Stack Developer — Laravel / PHP</span>
+<span class="font-body-md text-body-md text-primary font-medium">IBS — Sfax, Tunisia</span>
+</div>
+<div class="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded-full bg-surface-container-high font-label-tech text-caption text-primary shadow-sm">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+<span>2022 – 2026</span>
+</div>
+</div>
+<!-- Detailed Bullet Points -->
+<ul class="space-y-2.5 font-body-md text-body-md text-on-surface-variant pt-2">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary mt-1 flex-shrink-0">check_circle</span>
+<span>Designed, developed and maintained business and e-commerce web applications using <strong class="text-on-surface">Laravel, PHP and MySQL</strong>.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary mt-1 flex-shrink-0">check_circle</span>
+<span>Participated in the analysis and validation of functional requirements and translated business needs into scalable web features.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary mt-1 flex-shrink-0">check_circle</span>
+<span>Developed and integrated <strong class="text-on-surface">REST APIs</strong> to support application requirements and enable seamless communication between frontend and backend.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary mt-1 flex-shrink-0">check_circle</span>
+<span>Implemented application features leveraging Laravel models, controllers, migrations, routes, Blade views, and custom Artisan commands.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary mt-1 flex-shrink-0">check_circle</span>
+<span>Developed responsive frontend features utilizing <strong class="text-on-surface">HTML5, CSS3, Bootstrap, JavaScript, jQuery, and AJAX</strong> for asynchronous updates.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary mt-1 flex-shrink-0">check_circle</span>
+<span>Wrote and executed automated unit tests with <strong class="text-on-surface">PHPUnit under Laravel</strong> to systematically validate application behavior.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary mt-1 flex-shrink-0">check_circle</span>
+<span>Diagnosed, reproduced, and fixed complex application bugs while continually refactoring code to ensure maintainability.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary mt-1 flex-shrink-0">check_circle</span>
+<span>Collaborated directly with functional teams to clarify requirements, validate features, and resolve cross-functional technical bottlenecks.</span>
+</li>
+</ul>
+<!-- Position Tags -->
+<div class="flex flex-wrap gap-2 pt-space-md">
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-primary font-label-tech text-caption">Laravel</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-primary font-label-tech text-caption">PHP</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">MySQL</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-primary font-label-tech text-caption">REST APIs</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-secondary font-label-tech text-caption">PHPUnit</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">Bootstrap</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">jQuery</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">AJAX</span>
+</div>
+</div>
+</div>
+<!-- Position 2: CRT -->
+<div class="relative flex items-start gap-4 md:gap-8 group">
+<!-- Timeline Indicator Node -->
+<div class="relative z-10 flex-shrink-0 w-8 md:w-16 flex items-center justify-center">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">desktop_windows</span>
+</div>
+</div>
+<!-- Position Content Card -->
+<div class="flex-1 rounded-2xl bg-surface-container-low p-space-md md:p-space-lg shadow-md hover:bg-surface-container transition-colors">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 pb-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Software Developer / IT Volunteer — C# / .NET</span>
+<span class="font-body-md text-body-md text-secondary font-medium">CRT — Sfax, Tunisia</span>
+</div>
+<div class="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded-full bg-surface-container-high font-label-tech text-caption text-on-surface-variant shadow-sm">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+<span>2018 – 2021</span>
+</div>
+</div>
+<!-- Detailed Bullet Points -->
+<ul class="space-y-2.5 font-body-md text-body-md text-on-surface-variant pt-2">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-secondary mt-1 flex-shrink-0">check_circle</span>
+<span>Developed and maintained a comprehensive training management desktop application using <strong class="text-on-surface">C#/.NET</strong> and Microsoft Access.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-secondary mt-1 flex-shrink-0">check_circle</span>
+<span>Spearheaded relational data modeling and built role-based user/administrative management modules.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-secondary mt-1 flex-shrink-0">check_circle</span>
+<span>Maintained and iteratively updated the application to align with continuously evolving operational requirements.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-secondary mt-1 flex-shrink-0">check_circle</span>
+<span>Engineered end-to-end modules for trainee/student registration, trainer assignments, training session tracking, and automated certificate generation.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-secondary mt-1 flex-shrink-0">check_circle</span>
+<span>Worked closely with trainers and organization leaders to gather business rules and adapt system capabilities accordingly.</span>
+</li>
+</ul>
+<!-- Position Tags -->
+<div class="flex flex-wrap gap-2 pt-space-md">
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">C#</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">.NET</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">Microsoft Access</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-secondary font-label-tech text-caption">Data Modeling</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">Desktop Application</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. FEATURED PROJECTS -->
+<section class="w-full bg-surface-container-lowest py-space-xl" id="projects">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-xs">
+<div>
+<span class="font-label-tech text-label-tech text-primary uppercase tracking-widest">Engineering Showcase</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Featured Projects</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Production-ready e-commerce platforms and modern application architectures.</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Project 1: FamilyShoes -->
+<div class="rounded-2xl bg-surface-container-low shadow-xl overflow-hidden flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div class="p-space-md md:p-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary font-label-tech text-caption font-semibold">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                Active / In Development
+              </span>
+<span class="font-label-tech text-caption text-on-surface-variant">2026 – Present</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">FamilyShoes</h3>
+<p class="font-title-md text-title-md text-primary">Full-Stack E-commerce Application</p>
+</div>
+<!-- Preview Image -->
+<div class="relative w-full h-56 rounded-xl overflow-hidden shadow-md my-1">
+<img class="w-full h-full object-cover" data-alt="High tech dark mode e-commerce application interface for footwear retail, showing modern product grids, clean shopping cart drawer, brand badges, and glowing emerald UI elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPywrLy_KwAxLTmk2VZ_o9GH3pBpVxi42P6s7KwohaEu-O6-ThSap-T6bySWnWMdkqbB2su1jxa-WOWPnlhUkwU4Nojhd3MFryOgU488uY63Fe--g3na0OJ1jfDN7zeXnptDsBNbuTqAv4kRCVDLuCJNmlIpZQMdlF58JMvPZOU3F3TypGiMtTZ66wtq-6gVQh0HuN2cTWfT4mZwqJCK8SGPsHAOXHBxsXWEl7mwYtbhqtF1fhoBZC"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 px-3 py-1 rounded-md bg-surface-container-highest/90 text-primary font-label-tech text-caption">
+                Multi-Tenant Architecture
+              </div>
+</div>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary mt-0.5 flex-shrink-0">check</span>
+<span>Developing an enterprise-grade e-commerce application with <strong class="text-on-surface">Laravel, React, MySQL and Docker</strong>.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary mt-0.5 flex-shrink-0">check</span>
+<span>Developing administrative features for products, nested categories, brands, and promotional hero sliders.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary mt-0.5 flex-shrink-0">check</span>
+<span>Implementing RESTful endpoints, tokenized <strong class="text-on-surface">Laravel Sanctum</strong> authentication, and unit testing suites with <strong class="text-on-surface">PHPUnit</strong>.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary mt-0.5 flex-shrink-0">check</span>
+<span>Developing dynamic product/category browsing, granular product details, variant selectors (size/color), and automated stock level controls.</span>
+</li>
+</ul>
+</div>
+<div class="p-space-md bg-surface-container-high/40 flex flex-wrap items-center justify-between gap-3">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-tech text-caption font-semibold">Laravel</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-label-tech text-caption">React</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-tech text-caption">MySQL</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-tech text-caption">Docker</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-tech text-caption">Sanctum</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-label-tech text-caption">PHPUnit</span>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-tech text-caption text-primary hover:text-primary-fixed transition-colors" href="https://github.com/DevDhouha" rel="noopener noreferrer" target="_blank">
+<span>View Repository</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project 2: ShopGame -->
+<div class="rounded-2xl bg-surface-container-low shadow-xl overflow-hidden flex flex-col justify-between hover:bg-surface-container transition-colors">
+<div class="p-space-md md:p-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-tech text-caption font-semibold">
+<span class="material-symbols-outlined text-[14px]">task_alt</span>
+                Completed
+              </span>
+<span class="font-label-tech text-caption text-on-surface-variant">2026</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">ShopGame</h3>
+<p class="font-title-md text-title-md text-secondary">MERN Stack E-commerce Application</p>
+</div>
+<!-- Preview Image -->
+<div class="relative w-full h-56 rounded-xl overflow-hidden shadow-md my-1">
+<img class="w-full h-full object-cover" data-alt="Dark slate and neon UI dashboard for gaming e-commerce platform displaying video game catalog, customer review panels, cart checkout and analytics cards" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf_PMsX3gy8t_UiZQ0oK3KXn-rsaN2MC7pRKlWnviOWgSY_sDs-SHxHtb3ISEaQhlPEQ9CnxZs_1kMmBxH8Go07YqmTuFYOvqiIZeuivSfqvzl3UyOdatgVEv8A0op57oxoA2KIJBuYGE2GtArzIFNlgLYqPFvT-qLTsur6L8KT9utx53y1cTTl71wL-RSaEVkTmeadOvKLzmSO3Ql-mSKAXb7iezO4xOImZr48Xeqj3G6mpd5m62W"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 px-3 py-1 rounded-md bg-surface-container-highest/90 text-secondary font-label-tech text-caption">
+                NoSQL Microservice Store
+              </div>
+</div>
+<ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5 flex-shrink-0">check</span>
+<span>Developed a specialized gaming e-commerce application equipped with both administrative controls and customer-facing interfaces.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5 flex-shrink-0">check</span>
+<span>Built comprehensive administrative features for game cataloging, user reviews validation, and direct contact dispatchers alongside a reactive React client interface.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5 flex-shrink-0">check</span>
+<span>Integrated the responsive React frontend with robust backend REST APIs powered by <strong class="text-on-surface">Node.js, Express.js and MongoDB</strong> document storage.</span>
+</li>
+</ul>
+</div>
+<div class="p-space-md bg-surface-container-high/40 flex flex-wrap items-center justify-between gap-3">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-label-tech text-caption font-semibold">MongoDB</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-tech text-caption">Express.js</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-tech text-caption">React</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-tech text-caption">Node.js</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-tech text-caption">REST APIs</span>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-tech text-caption text-secondary hover:text-secondary-fixed transition-colors" href="https://github.com/DevDhouha" rel="noopener noreferrer" target="_blank">
+<span>View Source</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. EDUCATION, TRAINING & CERTIFICATIONS -->
+<section class="w-full py-space-xl" id="education">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin flex flex-col gap-space-lg">
+<div class="flex flex-col gap-1">
+<span class="font-label-tech text-label-tech text-primary uppercase tracking-widest">Academic &amp; Professional Growth</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Education &amp; Certifications</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Academic Degree -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col justify-between gap-space-sm border-t-2 border-primary">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">school</span>
+</div>
+<span class="font-label-tech text-caption text-primary">Academic Degree</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Master’s Degree in Computer Science</h3>
+<p class="font-body-sm text-body-sm text-primary font-medium">Software Engineering</p>
+<p class="font-caption text-caption text-on-surface-variant">Faculty of Sciences of Sfax</p>
+</div>
+<div class="pt-2">
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-tech text-caption">Graduated with Honors</span>
+</div>
+</div>
+<!-- ESPS Sfax Training -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col justify-between gap-space-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">code_blocks</span>
+</div>
+<span class="font-label-tech text-caption text-secondary">Specialized Training</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Web Development Training</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Full-Stack Web Development</p>
+<p class="font-caption text-caption text-on-surface-variant">ESPS Sfax</p>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-label-tech text-caption text-primary">Oct. 2022 – May 2023</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-label-tech text-caption">Completed</span>
+</div>
+</div>
+<!-- ISTQB Foundation Level -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col justify-between gap-space-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">fact_check</span>
+</div>
+<span class="font-label-tech text-caption text-primary">Quality Assurance</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">ISTQB Foundation Level</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Software Testing &amp; Verification Methodologies</p>
+<p class="font-caption text-caption text-on-surface-variant">Professional QA Program</p>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-label-tech text-caption text-primary">May 2026 – June 2026</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-tech text-caption">Training Completed</span>
+</div>
+</div>
+<!-- DevOps Training -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col justify-between gap-space-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">cloud_sync</span>
+</div>
+<span class="font-label-tech text-caption text-secondary">Infrastructure</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">DevOps Training</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Docker, CI/CD, Containerization, Linux SysAdmin</p>
+<p class="font-caption text-caption text-on-surface-variant">Continuous Advancement</p>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-label-tech text-caption text-primary">July 2026 – Present</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-tech text-caption">Active</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. LANGUAGES -->
+<section class="w-full bg-surface-container-lowest py-space-lg">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">translate</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Languages</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Arabic -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold">Arabic</span>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-label-tech text-caption font-semibold">Native</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2 overflow-hidden">
+<div class="bg-primary h-full rounded-full w-full"></div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Mother tongue • Full professional bilingual fluency</span>
+</div>
+<!-- French -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold">French</span>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-label-tech text-caption font-semibold">Fluent</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2 overflow-hidden">
+<div class="bg-primary h-full rounded-full w-[90%]"></div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Professional working proficiency • Technical articulation</span>
+</div>
+<!-- English -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold">English</span>
+<span class="px-2 py-0.5 rounded bg-secondary/10 text-secondary font-label-tech text-caption font-semibold">Intermediate</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[70%]"></div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Technical documentation • Development collaboration</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. CONTACT & INVITATION SECTION -->
+<section class="w-full py-space-xl" id="contact">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin">
+<div class="rounded-3xl bg-surface-container-low p-space-md md:p-space-xl shadow-2xl relative overflow-hidden">
+<!-- Ambient Backlight -->
+<div class="absolute -bottom-20 -right-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Contact Pitch & Direct Coordinates -->
+<div class="lg:col-span-5 flex flex-col justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-tech text-label-tech text-primary uppercase tracking-widest">Connect &amp; Collaborate</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface font-bold">
+                Let's Build Something Together
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Whether you need an architect for a new Laravel web platform, API engineering, or a reliable full-stack developer to strengthen your engineering team, feel free to reach out.
+              </p>
+</div>
+<!-- Direct Channel List -->
+<div class="flex flex-col gap-2.5">
+<!-- Email Card with Copy Trigger -->
+<div class="p-space-sm rounded-xl bg-surface-container-high flex items-center justify-between gap-2 shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-caption text-caption text-on-surface-variant">Email Address</span>
+<a class="font-body-sm text-body-sm text-on-surface hover:text-primary transition-colors truncate font-medium" href="mailto:bahlouldhouha86@gmail.com">bahlouldhouha86@gmail.com</a>
+</div>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-highest hover:text-primary text-on-surface-variant transition-colors flex-shrink-0" onclick="navigator.clipboard.writeText('bahlouldhouha86@gmail.com'); alert('Email copied to clipboard!');" title="Copy Email">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+<!-- Phone Card -->
+<div class="p-space-sm rounded-xl bg-surface-container-high flex items-center justify-between gap-2 shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Phone &amp; WhatsApp</span>
+<a class="font-body-sm text-body-sm text-on-surface hover:text-primary transition-colors font-medium" href="tel:+21650585315">+216 50 585 315</a>
+</div>
+</div>
+<a class="p-2 rounded-lg bg-surface-container-highest hover:text-primary text-on-surface-variant transition-colors" href="tel:+21650585315" title="Call directly">
+<span class="material-symbols-outlined text-[18px]">phone_forwarded</span>
+</a>
+</div>
+<!-- Location Card -->
+<div class="p-space-sm rounded-xl bg-surface-container-high flex items-center gap-3 shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">pin_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant">Base of Operations</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Sfax, Tunisia (Available for Remote Worldwide &amp; On-Site)</span>
+</div>
+</div>
+</div>
+<!-- Social Links -->
+<div class="flex items-center gap-2 pt-2">
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container text-on-surface hover:text-primary hover:bg-surface-container-high transition-colors font-label-tech text-body-sm shadow-sm" href="https://github.com/DevDhouha" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>github.com/DevDhouha</span>
+</a>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container text-on-surface hover:text-primary hover:bg-surface-container-high transition-colors font-label-tech text-body-sm shadow-sm" href="https://linkedin.com/in/dhouha-bahloul-0a202b244/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+<span>LinkedIn Profile</span>
+</a>
+</div>
+</div>
+<!-- Quick Message Form -->
+<div class="lg:col-span-7 rounded-2xl bg-surface-container-lowest p-space-md md:p-space-lg shadow-inner flex flex-col gap-space-sm">
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Send a Direct Message</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Have a project or open vacancy? Send a message and I'll respond within 24 hours.</p>
+</div>
+<form class="flex flex-col gap-3.5 pt-2" onsubmit="event.preventDefault(); alert('Thank you for reaching out! Dhouha will review your message promptly.'); this.reset();">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-tech text-caption text-on-surface-variant" for="name">Your Name</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" id="name" placeholder="e.g. Sarah Jenkins" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-tech text-caption text-on-surface-variant" for="email">Email Address</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" id="email" placeholder="sarah@company.com" required="" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-tech text-caption text-on-surface-variant" for="subject">Subject / Inquiry</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" id="subject" placeholder="Laravel Full-Stack Developer Opportunity / Project Inquiry" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-tech text-caption text-on-surface-variant" for="message">Project Scope or Message</label>
+<textarea class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary shadow-sm resize-none" id="message" placeholder="Tell me about your technical stack, architecture requirements, or project roadmap..." required="" rows="4"></textarea>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span class="font-caption text-caption text-on-surface-variant">Confidential communication guaranteed</span>
+</div>
+<button class="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-primary text-on-primary font-body-sm text-body-sm font-semibold hover:bg-primary-fixed transition-all shadow-[0_0_16px_rgba(78,222,163,0.3)]" type="submit">
+<span>Send Message</span>
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_12px_rgba(0,0,0,0.35)]"><div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg mb-space-lg"><div class="md:col-span-2 flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><img alt="Dhouha Bahloul Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WoAx9v0cCjNcaIBPTHy0XCrdkBidM2esoOF_0ZcAD7zQ-lEBTDsQBC2BzGcCR5q5u91Uuqic7CkbI5IJB2V_9ruKa6sbOrsX1KM42ocNg_fS-bR0ZdRktAk3CSNIms5361jTuCHLpz_WtvKPL5cECnfyux5nbH6zVywd9kqdqXSczsugQ1JlfeHtUgpKemPtHx6kGOgrDTwBI8gtESvIek7iF-h6CEgAMDK2Oc1ZuyAsW-Z2GF30nflMA"/><span class="font-headline-sm text-headline-sm text-on-surface">Dhouha Bahloul</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Full-Stack Developer engineering robust enterprise backends, scalable relational data architectures, and refined modern web applications powered by Laravel and PHP.</p><div class="flex items-center gap-2 pt-2"><span class="material-symbols-outlined text-primary text-[18px]">location_on</span><span class="font-body-sm text-body-sm text-on-surface-variant">Sfax, Tunisia • Available for Remote &amp; On-Site Roles</span></div></div><div class="flex flex-col gap-space-xs"><span class="font-label-tech text-label-tech text-primary tracking-wider uppercase">Get In Touch</span><a class="inline-flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="mailto:dhouha.bahloul@example.com"><span class="material-symbols-outlined text-[16px]">mail</span><span>dhouha.bahloul@example.com</span></a><a class="inline-flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="tel:+21600000000"><span class="material-symbols-outlined text-[16px]">call</span><span>+216 (Contact Direct)</span></a><div class="inline-flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px]">schedule</span><span>Timezone: GMT+1 (CET)</span></div></div><div class="flex flex-col gap-space-xs"><span class="font-label-tech text-label-tech text-primary tracking-wider uppercase">Connect &amp; Code</span><a class="inline-flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">terminal</span><span>github.com/dhouha-bahloul</span></a><a class="inline-flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="https://linkedin.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">hub</span><span>linkedin.com/in/dhouha-bahloul</span></a><div class="pt-2"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-label-tech text-caption hover:bg-surface-container-highest transition-colors" href="#contact"><span class="material-symbols-outlined text-[14px]">send</span><span>Schedule Interview</span></a></div></div></div><div class="flex flex-col md:flex-row items-center justify-between gap-space-sm pt-space-md bg-surface-container-low/40 rounded-xl px-space-md py-space-sm"><div class="flex flex-col sm:flex-row items-center gap-2"><span class="font-body-sm text-caption text-on-surface-variant">© 2025 Dhouha Bahloul. All rights reserved.</span><span class="hidden sm:inline text-outline-variant">•</span><span class="font-label-tech text-caption text-primary">Architected with Laravel &amp; Modern Web Tech</span></div><div class="flex items-center gap-space-sm"><a class="font-caption text-caption text-on-surface-variant hover:text-primary transition-colors" href="#about">About</a><a class="font-caption text-caption text-on-surface-variant hover:text-primary transition-colors" href="#skills">Tech Stack</a><a class="font-caption text-caption text-on-surface-variant hover:text-primary transition-colors" href="#projects">Case Studies</a><a class="font-caption text-caption text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a></div></div></div></footer></body></html>
